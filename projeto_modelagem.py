@@ -178,7 +178,7 @@ grid.fit(X_train, y_train_reg)
 print(f"Melhor Parâmetro (GridSearch): {grid.best_params_}")
 print(f"Melhor R² (Cross-Validation): {grid.best_score_:.4f}")
 
-# PyCaret (Se instalado)
+# PyCaret 
 try:
     from pycaret.regression import setup, compare_models
     print("\n>> Executando PyCaret (AutoML)...")
@@ -186,7 +186,7 @@ try:
     best = compare_models(n_select=1)
     print(f"Melhor Modelo PyCaret: {best}")
 except:
-    print("PyCaret não instalado ou erro de execução (Opcional).")
+    print("PyCaret não instalado ou erro de execução .")
 
 # ==============================================================================
 # 6. RELATÓRIO TÉCNICO FINAL
