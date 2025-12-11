@@ -1,7 +1,4 @@
-# ==============================================================================
-# PROJETO BIMESTRAL: MODELAGEM ESTATÍSTICA (Versão Final Corrigida)
-# ==============================================================================
-# ATENDIMENTO AOS CRITÉRIOS DA LAUDA:
+# ATENDIMENTO AOS CRITÉRIOS:
 # 1. EDA: Limpeza, Pairplots, Heatmap, Teste T (Estatístico)
 # 2. Modelagem: Regressão (Linear, Poly) e Classificação (LogReg, NB)
 # 3. Statsmodels: Interpretação de coeficientes (OLS Summary)
@@ -63,7 +60,7 @@ plt.show()
 
 # Pairplot (Exigência explícita da lauda)
 print("Gerando Pairplot (pode demorar alguns segundos)...")
-# Usando sample para não travar se o dataset for grande, mas mantendo a lógica
+# Usando sample para não travar
 sns.pairplot(df[['TotalMoney', 'TournamentNo', 'PlayerNo', 'YearsActive']].sample(min(200, len(df))))
 plt.suptitle('Pairplot das Principais Variáveis', y=1.02)
 plt.show()
